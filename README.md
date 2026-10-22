@@ -2,6 +2,8 @@
 
 ![Ratz HLL Vietnam Planner screenshot](docs/screenshot.png)
 
+**Live demo:** https://lagerqvist123.github.io/ratz-hll-vietnam-planner/
+
 Tactical planner for Hell Let Loose: Vietnam. Draw on the map, place icons (garrison, outpost, tunnel, etc.), measure distances, and pick active strongpoints across all six maps (CAM, DAK, HUE, QUA, THA, VAN).
 
 Unofficial fan tool, not affiliated with the makers of Hell Let Loose: Vietnam. Plans are saved locally in your browser.
