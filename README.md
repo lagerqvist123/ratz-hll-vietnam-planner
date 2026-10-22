@@ -1,24 +1,24 @@
 # Ratz HLL Vietnam Planner
 
-Taktisk planerare för Hell Let Loose: Vietnam – rita, placera ikoner (garrison, outpost, tunnel m.m.), mät avstånd och välj aktiva strongpoints på alla sex kartor (CAM, DAK, HUE, QUA, THA, VAN).
+Tactical planner for Hell Let Loose: Vietnam. Draw on the map, place icons (garrison, outpost, tunnel, etc.), measure distances, and pick active strongpoints across all six maps (CAM, DAK, HUE, QUA, THA, VAN).
 
-Inofficiellt fanverktyg, inte kopplat till utvecklarna av Hell Let Loose: Vietnam. Planer sparas lokalt i webbläsaren.
+Unofficial fan tool, not affiliated with the makers of Hell Let Loose: Vietnam. Plans are saved locally in your browser.
 
-## Innehåll
+## Contents
 
-Detta är den byggda (statiska) versionen av appen:
+This is the built (static) version of the app:
 
-- `index.html` – startsida
-- `assets/` – byggd JS/CSS
-- `icons/` – ikoner och `icons.json`
-- `maps/<KOD>/` – kartbilder (terrain/tactical) och `meta.json` med capture points och sektorer
+- `index.html` – entry page
+- `assets/` – built JS/CSS
+- `icons/` – icons and `icons.json`
+- `maps/<CODE>/` – map images (terrain/tactical) and `meta.json` with capture points and sectors
 
-## Köra lokalt
+## Running locally
 
-Kräver en webbserver (ES-moduler laddas inte via `file://`):
+A web server is required, since ES modules do not load over `file://`:
 
 ```
 python -m http.server 8000
 ```
 
-Öppna sedan http://localhost:8000
+Then open http://localhost:8000
