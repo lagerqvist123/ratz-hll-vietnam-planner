@@ -1,0 +1,138 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ratz HLL Vietnam Planner</title>
+<link rel="icon" href="logo.png" type="image/png" />
+<script type="module" crossorigin src="./assets/index-BsA57T8V.js"></script>
+<link rel="stylesheet" crossorigin href="./assets/index-D6GtXfz7.css">
+<header class="topbar">
+      <div class="brand">
+        <img id="logo" src="logo.png" alt="Desert Ratz" hidden />
+        <span class="brand-title">Ratz HLL Vietnam Planner</span>
+      </div>
+      <label class="field">
+        <span>Map</span>
+        <select id="mapSelect"></select>
+      </label>
+      <div class="plan-bar">
+        <label class="field">
+          <span>Plan</span>
+          <select id="planSelect"></select>
+        </label>
+        <button id="planNew" title="New plan">New</button>
+        <button id="planRename" title="Rename plan">Rename</button>
+        <button id="planDelete" title="Delete plan" class="danger">Delete</button>
+        <span class="sep"></span>
+        <details class="menu" id="exportMenu">
+          <summary title="Save or load the plan as a file">Export / import ▾</summary>
+          <div class="menu-body">
+            <button id="exportJson" title="Download this plan as .json">Export JSON</button>
+            <button id="importJson" title="Load a plan .json">Import JSON</button>
+            <button id="exportPng" title="Save the current view as a PNG file">Export PNG</button>
+          </div>
+        </details>
+        <button id="copyPng" class="primary" title="Copy the whole map to the clipboard as an image (paste into Discord etc.)">Copy image</button>
+        <input id="importFile" type="file" accept=".json,application/json" hidden />
+      </div>
+      <span id="saveState" class="save-state"></span>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section>
+          <h2>Tools</h2>
+          <div id="tools" class="tool-grid"></div>
+          <div class="row">
+            <button id="undo" title="Undo (Ctrl+Z)">↶ Undo</button>
+            <button id="redo" title="Redo (Ctrl+Y)">↷ Redo</button>
+            <button id="clearPlan" class="danger" title="Remove every item in this plan">Clear</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Colour &amp; width</h2>
+          <div id="colors" class="swatches"></div>
+          <div id="widths" class="widths"></div>
+          <label class="field inline">
+            <span>Text size</span>
+            <input id="textSize" type="range" min="10" max="36" step="1" value="16" />
+            <output id="textSizeOut">16</output>
+          </label>
+        </section>
+
+        <section>
+          <h2>Icons <small>click to place, or drag onto the map</small></h2>
+          <div id="palette" class="palette"></div>
+          <p class="muted">Drop an icon on the map to place it. Garrison circles turn red when they overlap another garrison.</p>
+        </section>
+
+        <section id="selectionPanel" hidden>
+          <h2>Selected</h2>
+          <div id="selectionBody"></div>
+        </section>
+
+        <section id="measurePanel" hidden>
+          <h2>Measure</h2>
+          <div id="measureReadout" class="readout"></div>
+        </section>
+
+        <section id="cpSection" hidden>
+          <h2>Active strongpoints</h2>
+          <div class="muted">Pick one per sector (or click a circle in Select mode). The others are greyed out.</div>
+          <div id="cpPicker"></div>
+          <div class="row">
+            <button id="cpRandom" title="Pick a random strongpoint in every sector">Random layout</button>
+            <button id="cpClear">Clear</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Map layers</h2>
+          <div id="baseLayers"></div>
+          <label class="check"><input id="toggleGrid" type="checkbox" checked /> Grid</label>
+          <label class="check"><input id="toggleCps" type="checkbox" checked /> Capture points</label>
+          <label class="check"><input id="toggleSectors" type="checkbox" /> Sectors</label>
+          <label class="check"><input id="toggleRadii" type="checkbox" checked /> Icon radius circles</label>
+          <div class="legend muted"><span class="lg lg-green"></span> Garrison radius (100 m)<br /><span class="lg lg-red"></span> Overlaps another garrison (closer than 200 m)</div>
+        </section>
+
+        <section class="help">
+          <h2>Keys</h2>
+          <p>
+            <kbd>V</kbd> select · <kbd>I</kbd> icon · <kbd>F</kbd> freehand · <kbd>L</kbd> line · <kbd>A</kbd> arrow · <kbd>B</kbd> box ·
+            <kbd>T</kbd> text · <kbd>M</kbd> measure · <kbd>C</kbd> connect tunnels · <kbd>E</kbd> eraser<br />
+            <kbd>Ctrl+Z</kbd> undo · <kbd>Ctrl+Y</kbd> redo · <kbd>Del</kbd> delete selected · right-click deletes ·
+            <kbd>Esc</kbd> cancel · <kbd>0</kbd> fit map
+          </p>
+          <p class="muted fan-note">Unofficial fan tool, not affiliated with the makers of Hell Let Loose: Vietnam. Plans are saved in your own browser.</p>
+        </section>
+      </aside>
+
+      <main class="map-wrap">
+        <div id="map"></div>
+        <div id="mapMessage" class="map-message" hidden></div>
+        <div id="hint" class="hint" hidden>
+          <span id="hintText"></span>
+          <button id="hintClose" type="button">Got it</button>
+        </div>
+      </main>
+    </div>
+
+    <footer class="statusbar">
+      <span id="cursorRef">—</span>
+      <span id="statusText"></span>
+    </footer>
+
+    <div id="dialog" class="dialog-backdrop" hidden>
+      <form id="dialogForm" class="dialog" autocomplete="off">
+        <h3 id="dialogTitle"></h3>
+        <p id="dialogText"></p>
+        <!-- password-manager extensions (Bitwarden, 1Password, LastPass) ignore this field -->
+        <!-- a textarea, not an input: password managers only attach their autofill to input fields -->
+        <textarea id="dialogInput" rows="1" name="planner-note" autocomplete="off" spellcheck="false"></textarea>
+        <div class="row end">
+          <button type="button" id="dialogCancel">Cancel</button>
+          <button type="submit" id="dialogOk" class="primary">OK</button>
+        </div>
+      </form>
+    </div>
+
+</body></html>

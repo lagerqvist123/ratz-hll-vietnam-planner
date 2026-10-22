@@ -1,0 +1,277 @@
+{
+  "code": "THA",
+  "name": "THA",
+  "level": "THA_L_1965",
+  "sizeMeters": 2000,
+  "grid": {
+    "cols": 10,
+    "rows": 10
+  },
+  "playArea": {
+    "x0": 400,
+    "y0": 0,
+    "x1": 1600,
+    "y1": 2000
+  },
+  "attackAxis": "Y",
+  "usSide": "+Y",
+  "layers": {
+    "terrain": {
+      "image": "terrain.webp",
+      "maxZoom": 4
+    },
+    "tactical": {
+      "image": "tactical.webp",
+      "maxZoom": 4
+    }
+  },
+  "capturePoints": [
+    {
+      "id": "us-encampment",
+      "name": "US ENCAMPMENT",
+      "x": 596,
+      "y": 1680.6,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "us-pbr-camp",
+      "name": "US PBR CAMP",
+      "x": 985.5,
+      "y": 1672.3,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "ho-ng-long-lz",
+      "name": "HOÀNG LONG LZ",
+      "x": 1405,
+      "y": 1668.1,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "railway-village",
+      "name": "RAILWAY VILLAGE",
+      "x": 604.6,
+      "y": 1401.7,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "nva-river-checkpoint",
+      "name": "NVA RIVER CHECKPOINT",
+      "x": 1051.2,
+      "y": 1390.5,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "h-m-r-ng-approach",
+      "name": "HÀM RỒNG APPROACH",
+      "x": 1390.4,
+      "y": 1372.5,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "fortified-train-station",
+      "name": "FORTIFIED TRAIN STATION",
+      "x": 603.2,
+      "y": 1000,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "dragon-s-jaw",
+      "name": "DRAGON'S JAW",
+      "x": 1000,
+      "y": 1000,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "trainyard",
+      "name": "TRAINYARD",
+      "x": 1438.6,
+      "y": 1000,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "ng-t-y",
+      "name": "ĐƯỜNG TÂY",
+      "x": 650.5,
+      "y": 616.1,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "nam-m-river",
+      "name": "NAM MÃ RIVER",
+      "x": 1002.6,
+      "y": 607.9,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "y-n-trung-village",
+      "name": "YÊN TRUNG VILLAGE",
+      "x": 1398.5,
+      "y": 601.1,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "boatyard",
+      "name": "BOATYARD",
+      "x": 735,
+      "y": 330,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "railway-checkpoint",
+      "name": "RAILWAY CHECKPOINT",
+      "x": 1000,
+      "y": 330,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "an-ch-ng-farm",
+      "name": "AN CHƯƠNG FARM",
+      "x": 1408.2,
+      "y": 311.3,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "sector-1",
+      "sector": 1,
+      "polygon": [
+        [
+          400,
+          1600
+        ],
+        [
+          1600,
+          1600
+        ],
+        [
+          1600,
+          2000
+        ],
+        [
+          400,
+          2000
+        ]
+      ]
+    },
+    {
+      "id": "sector-2",
+      "sector": 2,
+      "polygon": [
+        [
+          400,
+          1200
+        ],
+        [
+          1600,
+          1200
+        ],
+        [
+          1600,
+          1600
+        ],
+        [
+          400,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-3",
+      "sector": 3,
+      "polygon": [
+        [
+          400,
+          800
+        ],
+        [
+          1600,
+          800
+        ],
+        [
+          1600,
+          1200
+        ],
+        [
+          400,
+          1200
+        ]
+      ]
+    },
+    {
+      "id": "sector-4",
+      "sector": 4,
+      "polygon": [
+        [
+          400,
+          400
+        ],
+        [
+          1600,
+          400
+        ],
+        [
+          1600,
+          800
+        ],
+        [
+          400,
+          800
+        ]
+      ]
+    },
+    {
+      "id": "sector-5",
+      "sector": 5,
+      "polygon": [
+        [
+          400,
+          0
+        ],
+        [
+          1600,
+          0
+        ],
+        [
+          1600,
+          400
+        ],
+        [
+          400,
+          400
+        ]
+      ]
+    }
+  ]
+}

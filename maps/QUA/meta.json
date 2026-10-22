@@ -1,0 +1,277 @@
+{
+  "code": "QUA",
+  "name": "QUA",
+  "level": "QUA_L_1965",
+  "sizeMeters": 2000,
+  "grid": {
+    "cols": 10,
+    "rows": 10
+  },
+  "playArea": {
+    "x0": 0,
+    "y0": 400,
+    "x1": 2000,
+    "y1": 1600
+  },
+  "attackAxis": "X",
+  "usSide": "-X",
+  "layers": {
+    "terrain": {
+      "image": "terrain.webp",
+      "maxZoom": 4
+    },
+    "tactical": {
+      "image": "tactical.webp",
+      "maxZoom": 4
+    }
+  },
+  "capturePoints": [
+    {
+      "id": "lz-oak",
+      "name": "LZ OAK",
+      "x": 349.8,
+      "y": 609.1,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "u-s-recon-camp",
+      "name": "U.S RECON CAMP",
+      "x": 273.7,
+      "y": 1005,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "riverside-farm",
+      "name": "RIVERSIDE FARM",
+      "x": 325.1,
+      "y": 1444.7,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "jungle-hillside",
+      "name": "JUNGLE HILLSIDE",
+      "x": 681.7,
+      "y": 710.5,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "fishing-village",
+      "name": "FISHING VILLAGE",
+      "x": 510.2,
+      "y": 1089.3,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "jungle-crossroads",
+      "name": "JUNGLE CROSSROADS",
+      "x": 641.8,
+      "y": 1372.9,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "limestone-cave",
+      "name": "LIMESTONE CAVE",
+      "x": 1007.5,
+      "y": 568.8,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "flooded-village",
+      "name": "FLOODED VILLAGE",
+      "x": 1021.8,
+      "y": 1092.4,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "scissor-crossing",
+      "name": "SCISSOR CROSSING",
+      "x": 1000,
+      "y": 1400,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "hidden-nva-camp",
+      "name": "HIDDEN NVA CAMP",
+      "x": 1363.8,
+      "y": 625.4,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "jungle-farmstead",
+      "name": "JUNGLE FARMSTEAD",
+      "x": 1400,
+      "y": 1000,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "abandoned-hamlet",
+      "name": "ABANDONED HAMLET",
+      "x": 1366.1,
+      "y": 1410,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "nva-supply-cache",
+      "name": "NVA SUPPLY CACHE",
+      "x": 1731.8,
+      "y": 579.4,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "eastern-bank",
+      "name": "EASTERN BANK",
+      "x": 1687.8,
+      "y": 1021.2,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "twin-islands",
+      "name": "TWIN ISLANDS",
+      "x": 1717.3,
+      "y": 1400,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "sector-1",
+      "sector": 1,
+      "polygon": [
+        [
+          0,
+          400
+        ],
+        [
+          400,
+          400
+        ],
+        [
+          400,
+          1600
+        ],
+        [
+          0,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-2",
+      "sector": 2,
+      "polygon": [
+        [
+          400,
+          400
+        ],
+        [
+          800,
+          400
+        ],
+        [
+          800,
+          1600
+        ],
+        [
+          400,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-3",
+      "sector": 3,
+      "polygon": [
+        [
+          800,
+          400
+        ],
+        [
+          1200,
+          400
+        ],
+        [
+          1200,
+          1600
+        ],
+        [
+          800,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-4",
+      "sector": 4,
+      "polygon": [
+        [
+          1200,
+          400
+        ],
+        [
+          1600,
+          400
+        ],
+        [
+          1600,
+          1600
+        ],
+        [
+          1200,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-5",
+      "sector": 5,
+      "polygon": [
+        [
+          1600,
+          400
+        ],
+        [
+          2000,
+          400
+        ],
+        [
+          2000,
+          1600
+        ],
+        [
+          1600,
+          1600
+        ]
+      ]
+    }
+  ]
+}

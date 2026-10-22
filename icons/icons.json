@@ -1,0 +1,49 @@
+[
+  {
+    "id": "garrison",
+    "label": "Garrison",
+    "file": "game/garrison.png",
+    "radiusMeters": 100
+  },
+  {
+    "id": "outpost",
+    "label": "Outpost",
+    "file": "game/outpost.png"
+  },
+  {
+    "id": "airhead",
+    "label": "Airhead / LZ",
+    "file": "game/airhead.png"
+  },
+  {
+    "id": "supplydrop",
+    "label": "Supply Drop",
+    "file": "game/supplydrop.png"
+  },
+  {
+    "id": "tunnel",
+    "label": "Tunnel",
+    "file": "game/tunnel.png",
+    "radiusMeters": 100
+  },
+  {
+    "id": "spawnheli",
+    "label": "Spawn Helicopter",
+    "file": "game/spawnheli.png"
+  },
+  {
+    "id": "tank",
+    "label": "Tank",
+    "file": "game/tank.png"
+  },
+  {
+    "id": "pbr",
+    "label": "PBR Boat",
+    "file": "game/pbr.png"
+  },
+  {
+    "id": "limpen14",
+    "label": "Limpen14",
+    "file": "limpen14.svg"
+  }
+]

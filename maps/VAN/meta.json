@@ -1,0 +1,277 @@
+{
+  "code": "VAN",
+  "name": "VAN",
+  "level": "VAN_L_1965",
+  "sizeMeters": 2000,
+  "grid": {
+    "cols": 10,
+    "rows": 10
+  },
+  "playArea": {
+    "x0": 0,
+    "y0": 400,
+    "x1": 2000,
+    "y1": 1600
+  },
+  "attackAxis": "X",
+  "usSide": "+X",
+  "layers": {
+    "terrain": {
+      "image": "terrain.webp",
+      "maxZoom": 4
+    },
+    "tactical": {
+      "image": "tactical.webp",
+      "maxZoom": 4
+    }
+  },
+  "capturePoints": [
+    {
+      "id": "phase-line-apple",
+      "name": "PHASE LINE APPLE",
+      "x": 1706.1,
+      "y": 558.7,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "an-c-ng-1",
+      "name": "AN CƯỜNG (1)",
+      "x": 1699.2,
+      "y": 1023.4,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "river-s-end",
+      "name": "RIVER'S END",
+      "x": 1703.3,
+      "y": 1409.1,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "an-c-ng-outskirts",
+      "name": "AN CƯỜNG OUTSKIRTS",
+      "x": 1417.8,
+      "y": 584.2,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "nva-relay-station",
+      "name": "NVA RELAY STATION",
+      "x": 1392.5,
+      "y": 1015.4,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "c-u-b-u-chi-u",
+      "name": "CẦU BÀU CHIẾU",
+      "x": 1314.9,
+      "y": 1340.5,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "jungle-outpost",
+      "name": "JUNGLE OUTPOST",
+      "x": 1000,
+      "y": 644.3,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "fortified-an-c-ng",
+      "name": "FORTIFIED AN CƯỜNG",
+      "x": 998.9,
+      "y": 1007,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "riverside-village",
+      "name": "RIVERSIDE VILLAGE",
+      "x": 976.6,
+      "y": 1389.3,
+      "radius": 60,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "river-checkpoint",
+      "name": "RIVER CHECKPOINT",
+      "x": 598.9,
+      "y": 568.1,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "lagoon-overlook",
+      "name": "LAGOON OVERLOOK",
+      "x": 600,
+      "y": 1002,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "jungle-clearing-camp",
+      "name": "JUNGLE CLEARING CAMP",
+      "x": 600,
+      "y": 1351.2,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "an-cu-ng-2",
+      "name": "AN CUỜNG (2)",
+      "x": 279.9,
+      "y": 543.4,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "lz-blue-perimeter",
+      "name": "LZ BLUE PERIMETER",
+      "x": 308.5,
+      "y": 982.8,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "route-to-nam-y-n",
+      "name": "ROUTE TO NAM YÊN",
+      "x": 296.8,
+      "y": 1373.3,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "sector-1",
+      "sector": 1,
+      "polygon": [
+        [
+          1600,
+          400
+        ],
+        [
+          2000,
+          400
+        ],
+        [
+          2000,
+          1600
+        ],
+        [
+          1600,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-2",
+      "sector": 2,
+      "polygon": [
+        [
+          1200,
+          400
+        ],
+        [
+          1600,
+          400
+        ],
+        [
+          1600,
+          1600
+        ],
+        [
+          1200,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-3",
+      "sector": 3,
+      "polygon": [
+        [
+          800,
+          400
+        ],
+        [
+          1200,
+          400
+        ],
+        [
+          1200,
+          1600
+        ],
+        [
+          800,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-4",
+      "sector": 4,
+      "polygon": [
+        [
+          400,
+          400
+        ],
+        [
+          800,
+          400
+        ],
+        [
+          800,
+          1600
+        ],
+        [
+          400,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-5",
+      "sector": 5,
+      "polygon": [
+        [
+          0,
+          400
+        ],
+        [
+          400,
+          400
+        ],
+        [
+          400,
+          1600
+        ],
+        [
+          0,
+          1600
+        ]
+      ]
+    }
+  ]
+}

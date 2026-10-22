@@ -1,0 +1,277 @@
+{
+  "code": "DAK",
+  "name": "DAK",
+  "level": "DAK_L_1967",
+  "sizeMeters": 2000,
+  "grid": {
+    "cols": 10,
+    "rows": 10
+  },
+  "playArea": {
+    "x0": 0,
+    "y0": 400,
+    "x1": 2000,
+    "y1": 1600
+  },
+  "attackAxis": "X",
+  "usSide": "-X",
+  "layers": {
+    "terrain": {
+      "image": "terrain.webp",
+      "maxZoom": 4
+    },
+    "tactical": {
+      "image": "tactical.webp",
+      "maxZoom": 4
+    }
+  },
+  "capturePoints": [
+    {
+      "id": "route-to-arvn-base",
+      "name": "ROUTE TO ARVN BASE",
+      "x": 319.6,
+      "y": 608.3,
+      "radius": 50,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "us-radio-relay",
+      "name": "US RADIO RELAY",
+      "x": 299.5,
+      "y": 983,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "fortified-bridge",
+      "name": "FORTIFIED BRIDGE",
+      "x": 281.9,
+      "y": 1326.9,
+      "radius": 60,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "airborne-camp",
+      "name": "AIRBORNE CAMP",
+      "x": 597,
+      "y": 569,
+      "radius": 65,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "med-evac-station",
+      "name": "MED EVAC STATION",
+      "x": 601,
+      "y": 964.6,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "deserted-farmland",
+      "name": "DESERTED FARMLAND",
+      "x": 611.5,
+      "y": 1387.3,
+      "radius": 60,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "shooting-range",
+      "name": "SHOOTING RANGE",
+      "x": 999.5,
+      "y": 557.5,
+      "radius": 70,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "special-forces-camp",
+      "name": "SPECIAL FORCES CAMP",
+      "x": 1003.3,
+      "y": 981.2,
+      "radius": 70,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "patrol-boat-docks",
+      "name": "PATROL BOAT DOCKS",
+      "x": 1009.9,
+      "y": 1329.5,
+      "radius": 70,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "c130-wreckage",
+      "name": "C130 WRECKAGE",
+      "x": 1415.9,
+      "y": 695.6,
+      "radius": 70,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "ammo-dump",
+      "name": "AMMO DUMP",
+      "x": 1412.4,
+      "y": 979,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "river-lookout",
+      "name": "RIVER LOOKOUT",
+      "x": 1400.4,
+      "y": 1343.7,
+      "radius": 60,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "terminal",
+      "name": "TERMINAL",
+      "x": 1697,
+      "y": 701.5,
+      "radius": 55,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "abandoned-dwelling",
+      "name": "ABANDONED DWELLING",
+      "x": 1706.5,
+      "y": 992.7,
+      "radius": 55,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "nva-boat-landing",
+      "name": "NVA BOAT LANDING",
+      "x": 1678.6,
+      "y": 1336.1,
+      "radius": 55,
+      "sector": 5,
+      "side": "NVA"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "sector-1",
+      "sector": 1,
+      "polygon": [
+        [
+          0,
+          400
+        ],
+        [
+          400,
+          400
+        ],
+        [
+          400,
+          1600
+        ],
+        [
+          0,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-2",
+      "sector": 2,
+      "polygon": [
+        [
+          400,
+          400
+        ],
+        [
+          800,
+          400
+        ],
+        [
+          800,
+          1600
+        ],
+        [
+          400,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-3",
+      "sector": 3,
+      "polygon": [
+        [
+          800,
+          400
+        ],
+        [
+          1200,
+          400
+        ],
+        [
+          1200,
+          1600
+        ],
+        [
+          800,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-4",
+      "sector": 4,
+      "polygon": [
+        [
+          1200,
+          400
+        ],
+        [
+          1600,
+          400
+        ],
+        [
+          1600,
+          1600
+        ],
+        [
+          1200,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-5",
+      "sector": 5,
+      "polygon": [
+        [
+          1600,
+          400
+        ],
+        [
+          2000,
+          400
+        ],
+        [
+          2000,
+          1600
+        ],
+        [
+          1600,
+          1600
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "code": "CAM",
+  "name": "CAM",
+  "level": "CAM_L_1969",
+  "sizeMeters": 2000,
+  "grid": {
+    "cols": 10,
+    "rows": 10
+  },
+  "playArea": {
+    "x0": 0,
+    "y0": 400,
+    "x1": 2000,
+    "y1": 1600
+  },
+  "attackAxis": "X",
+  "usSide": "-X",
+  "layers": {
+    "terrain": {
+      "image": "terrain.webp",
+      "maxZoom": 4
+    },
+    "tactical": {
+      "image": "tactical.webp",
+      "maxZoom": 4
+    }
+  },
+  "capturePoints": [
+    {
+      "id": "pol-storage",
+      "name": "POL STORAGE",
+      "x": 309.1,
+      "y": 588.2,
+      "radius": 65,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "signal-site",
+      "name": "SIGNAL SITE",
+      "x": 313,
+      "y": 993.8,
+      "radius": 65,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "pol-jetty",
+      "name": "POL JETTY",
+      "x": 336.9,
+      "y": 1327.5,
+      "radius": 65,
+      "sector": 1,
+      "side": "US"
+    },
+    {
+      "id": "roadside-camp",
+      "name": "ROADSIDE CAMP",
+      "x": 608.9,
+      "y": 661.7,
+      "radius": 65,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "checkpoint",
+      "name": "CHECKPOINT",
+      "x": 604.6,
+      "y": 1081.7,
+      "radius": 55,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "ammo-pier",
+      "name": "AMMO PIER",
+      "x": 649.1,
+      "y": 1323.7,
+      "radius": 65,
+      "sector": 2,
+      "side": "Centre"
+    },
+    {
+      "id": "cantonment-outskirts",
+      "name": "CANTONMENT OUTSKIRTS",
+      "x": 999.6,
+      "y": 611.2,
+      "radius": 65,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "base-camp",
+      "name": "BASE CAMP",
+      "x": 997.8,
+      "y": 1006.5,
+      "radius": 65,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "delong-piers",
+      "name": "DELONG PIERS",
+      "x": 986.5,
+      "y": 1345.3,
+      "radius": 65,
+      "sector": 3,
+      "side": "Centre"
+    },
+    {
+      "id": "desert-jungle-crossing",
+      "name": "DESERT JUNGLE CROSSING",
+      "x": 1402.1,
+      "y": 551.6,
+      "radius": 65,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "dry-creek-bed",
+      "name": "DRY CREEK BED",
+      "x": 1430.6,
+      "y": 1005.7,
+      "radius": 65,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "storage-yard",
+      "name": "STORAGE YARD",
+      "x": 1393.5,
+      "y": 1374.4,
+      "radius": 65,
+      "sector": 4,
+      "side": "Centre"
+    },
+    {
+      "id": "jungle-hill",
+      "name": "JUNGLE HILL",
+      "x": 1697,
+      "y": 507.9,
+      "radius": 65,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "maintenance-market",
+      "name": "MAINTENANCE MARKET",
+      "x": 1711.3,
+      "y": 989.2,
+      "radius": 60,
+      "sector": 5,
+      "side": "NVA"
+    },
+    {
+      "id": "communications-centre",
+      "name": "COMMUNICATIONS CENTRE",
+      "x": 1712.3,
+      "y": 1307.1,
+      "radius": 65,
+      "sector": 5,
+      "side": "NVA"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "sector-1",
+      "sector": 1,
+      "polygon": [
+        [
+          0,
+          400
+        ],
+        [
+          400,
+          400
+        ],
+        [
+          400,
+          1600
+        ],
+        [
+          0,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-2",
+      "sector": 2,
+      "polygon": [
+        [
+          400,
+          400
+        ],
+        [
+          800,
+          400
+        ],
+        [
+          800,
+          1600
+        ],
+        [
+          400,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-3",
+      "sector": 3,
+      "polygon": [
+        [
+          800,
+          400
+        ],
+        [
+          1200,
+          400
+        ],
+        [
+          1200,
+          1600
+        ],
+        [
+          800,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-4",
+      "sector": 4,
+      "polygon": [
+        [
+          1200,
+          400
+        ],
+        [
+          1600,
+          400
+        ],
+        [
+          1600,
+          1600
+        ],
+        [
+          1200,
+          1600
+        ]
+      ]
+    },
+    {
+      "id": "sector-5",
+      "sector": 5,
+      "polygon": [
+        [
+          1600,
+          400
+        ],
+        [
+          2000,
+          400
+        ],
+        [
+          2000,
+          1600
+        ],
+        [
+          1600,
+          1600
+        ]
+      ]
+    }
+  ]
+}
